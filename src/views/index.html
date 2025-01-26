@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shorter</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+
+        }
+        .title {
+            display: flex;
+            flex-direction: row;
+            font-family: 'Roboto';
+            font-weight: bolder;
+            font-size: 18pt;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            font-family: 'Roboto';
+            font-size: 12pt;
+            height: 30px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 5px 5px 5px 5px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .btn {
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 12pt;
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            color: #fff;
+            background-color: #0d6efd;
+            cursor: pointer;
+            transition: background-color .25s;
+        }
+        .btn:hover {
+            background-color: #0b5ed7;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <form class="container" method="post">
+        <h3 class="title">Link Shorter</h3>
+        <input type="text" name="url" class="input" placeholder="Enter your url..." />
+        <div class="btn-container">
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
